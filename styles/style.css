@@ -1,0 +1,823 @@
+/*GENERAL*/
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin: 0;
+}
+
+.o-hidden{
+    overflow: hidden;
+}
+
+main{
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+.selected{
+    border-bottom:2px solid #dcb45f;
+}
+
+/*HEADER*/
+header{
+    background-color: black;
+    font-size: 120%;
+}
+
+.logo{
+    float: left;
+    color:#dcb45f;
+}
+
+/*MENU*/
+.menu{
+    float: right;
+    padding-top: 0.3em;
+}
+
+.menu ul{
+    padding-left: 0;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:white;
+    padding:0 0.5em;
+    text-align: center;
+}
+
+.menu ul li a:hover{
+    border-bottom:2px solid #dcb45f;
+}
+
+/*menu mobile*/
+.mobile_menu a{
+    color:white;
+    font-family: 'Montserrat',sans-serif;
+    text-decoration: none;
+}
+
+.mobile_menu{
+    display:none;
+    text-align: center;
+    background: black;
+}
+
+.mobile_menu ul{
+    padding-left: 0;
+    margin: 0;
+}
+
+.mobile_menu li{
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.hamburger,.x{
+    color:white;   
+    text-align: right;
+    font-size: 3em;
+    color:#dcb45f;
+    margin: 0;
+    margin-top: .3em;
+    display: none;
+}
+
+/*HERO*/
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 4em;
+    margin: 0;
+    z-index: 3;
+    line-height: 0.6em;
+}
+
+.hero h2{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Italianno', cursive;
+    font-weight: 200;
+    font-size: 3em;
+    margin: 0;
+    color:#dcb45f;
+}
+
+.hero h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0;
+}
+.amp{
+    z-index: 0;
+    color:#dcb45f;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Italianno', cursive;
+}
+
+/*MAIN*/
+
+/*ABOUT US*/
+.aboutus h2{
+    color:#dcb45f;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0 0 1em 0;
+}
+
+.aboutus h4{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.8em;
+}
+
+.aboutus h3{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+}
+
+.aboutus{
+    width: 100%;
+    padding: 3em 0;
+    text-align: center;
+}
+
+.aboutus_text,.aboutus_img{
+    display: inline-block;
+    width: 40%;
+}
+
+.aboutus_text{
+    text-align: left;
+}
+
+.aboutus_img{
+    text-align: right;
+}
+
+.aboutus_img img{
+    width: 60%;
+    min-width: 319px;
+    max-width: 320px;
+}
+
+/*OFFER*/
+.offers{
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url('../img/offer_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 3em 0 5em 0;
+}
+
+.offers h2{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    color: #dcb45f;
+    font-size: 3em;
+}
+
+.offer{
+    display: inline-block;
+    margin: 1em;
+    background-color: #dcb45f;
+    width: 20%;
+}
+
+.offer_text{
+    padding: 1em;
+}
+
+.offer img{
+    width: 100%;
+    margin-bottom: -0.85em;
+}
+
+.offer_text h4{
+    background-color: #dcb45f;
+    margin:0;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    border:4px solid white;
+    padding: 1em;
+}
+
+/*DRINK MENU*/
+.drink_menu .container{
+    width: 80%;
+    padding: 1em 0;
+}
+
+.drink_menu h2{
+    font-family: 'Montserrat',sans-serif;
+    color:#dcb45f;
+    text-align: left;
+    float: left;
+    margin-left: .5em;
+}
+
+.navigation{
+    float:right;
+}
+
+.drink_menu ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.drink_menu ul li{
+    display: inline-block;
+    padding:1em;
+}
+
+.drink_menu ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.5em;
+}
+
+.drink_menu ul li a:hover{
+    color:#dcb45f;
+    border-bottom: 2px solid #dcb45f;
+}
+
+/*MENU ROLLER*/
+.menu_roller{
+    width: 100%;
+    height:25em;
+    padding-bottom: 1em;
+}
+
+.menu_roller h3{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+}
+
+.menu_roller p{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 200;
+}
+
+span{
+    font-weight: 200;
+}
+
+.menu_item{
+    text-align: left;
+    width: 40%;
+    border-bottom: 1.5px dotted silver;
+    display: inline-block;
+    margin: 0 3em;
+}
+
+.menu_item_left{
+    float:left;
+}
+
+.menu_item_right{
+    float: right;
+}
+
+/*HAPPY HOURS*/
+.happyhours{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('../img/events_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 1em 0;
+}
+
+.happyhours h2{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    color:#dcb45f;
+}
+
+.happyhours h4{
+    font-family: 'Montserrat',sans-serif;
+    color:white;
+    font-size: 2em;
+    font-weight: 200;
+}
+
+/*EVENTS*/
+.events{
+    width: 100%;
+}
+
+.events h2{
+    font-family: 'Montserrat',sans-serif;
+    text-align: left;
+    color: #dcb45f;
+    padding:1em 0 0.5em 3.5em;
+}
+
+.event{
+    width: 20%;
+    display: inline-block;
+    margin: 1em;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+}
+
+.event h4{
+    font-family: 'Montserrat',sans-serif;
+    color: #dcb45f;
+    text-align: left;
+}
+
+.event p{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.event img{
+    max-width: 100%;
+    transition: all 0.6s;
+}
+
+.event:hover img {
+    transform: scale(1.1);
+}
+
+/*GALLERY*/
+.gallery{
+    width: 100%;
+    font-size: 0;
+}
+
+.gallery img{
+    width: 20%;
+    filter: grayscale(0.7);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover{
+    filter:grayscale(0);
+}
+
+.gallery-text h2{
+    font-family: 'Montserrat',sans-serif;
+    color: #dcb45f;
+}
+
+/*LIGHTBOX*/
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 300;
+    padding-top: 5em;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.lightbox-content{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: black;
+}
+
+.slides{
+    border:0.25em solid #dcb45f;
+    border-radius: 0.2em;
+}
+
+.close{
+    font-size: 3em;
+    position: absolute;
+    right: 1em;
+    top: 0em;
+    color:#999;
+    transition: 0.3s ease-in-out;
+    z-index: 150;
+}
+
+.close:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.next,.prev{
+  position: absolute;
+  top: 50%;
+  padding: 0.8em;
+  margin-top: -1.5em;
+  color: white;
+  font-size: 1.5em;
+  transition: 0.3s ease;
+  z-index: 150;
+}
+
+.next {
+    right: 0;
+    border-radius: 0.2em;
+  }
+
+.prev{
+    left: 0;
+    border-radius: 0.2em;
+}  
+
+.prev:hover,.next:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*CONTACT*/
+.contact{
+    width: 100%;
+    padding: 5em 0 0 0;
+}
+
+.contact_item{
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contact_item h2{
+    font-family: 'Montserrat',sans-serif;
+    color: #dcb45f;
+    font-size: 1.3em;
+}
+
+.contact_item p{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+}
+
+.contact a{
+    color:black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.contact a:hover{
+    border:none;
+}
+/*FOOTER*/
+footer img{
+    margin: 0 1em;
+    width: 4%;
+}
+
+footer{
+    padding-top: 2em;
+    padding-bottom:5em;
+}
+
+/*BACK TO TOP*/
+.backtotop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    z-index: 5;
+    border: 1px solid #dcb45f;
+    border-radius: 4px;
+}
+
+.backtotop:hover{
+    cursor: pointer;
+}
+
+/*ANIMATIONS*/
+
+/*glass*/
+#spilled{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#spilled:hover{
+    cursor: pointer;
+    animation-name: bounce;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		transform:translateY(0)
+	}
+	40% {
+		transform:translateY(-30px)
+	}
+	60% {
+		transform:translateY(-15px)
+	}
+}
+
+/*menu sets*/
+.displayNone{
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.menu-set{
+    animation: menuFade .8s;
+}
+
+@keyframes menuFade{
+    0%{opacity:0};
+    25%{opacity:0.45};
+    50%{opacity:0.8};
+    100%{opacity:1};
+}
+
+/*lightbox*/
+.slides{
+    animation : fade 2s;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.fadeOut{
+    animation : fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+}
+
+/*Menu*/
+.show{
+    display:block;
+    animation: showMenu .5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showMenu{
+    from{
+        transform: translateY(-400px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.hide{
+    display: block;
+    animation: hideMenu .5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideMenu{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-600px);
+    }
+}
+
+
+/*BREAKPOINTS*/
+@media screen and (max-width:1470px){
+    .offer_text h4{
+        font-size: 100%;
+    }
+}
+
+/*iPad pro*/
+@media screen and (max-width:1200px){
+    body{
+        font-size: 130%;
+    }
+
+    .logo{
+        display:none;
+    }
+
+    .menu{
+        display:none;
+    }
+
+    header{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 5em;
+        z-index: 50;
+        font-size: 100%;
+    }
+
+    .mobile_menu{
+        margin-top: -1.2em;
+        z-index: 1;
+    }
+
+    .hamburger{
+        margin: 0;
+        display: block;
+        z-index: 50;
+    }
+
+    .x{
+        margin: 0;
+        display:none;
+        z-index: 50;
+    }
+
+    .aboutus_img{
+        display:none;
+    }
+
+    .aboutus_text{
+        display:block;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 130%;
+    }
+
+    .offer{
+        width: 25%;
+    }
+
+    .menu_item{
+        width: auto;
+        display:block;
+    }
+
+    .event{
+        width: 25%;
+    }
+
+    .gallery img{
+        width: 33.33%;
+    }
+
+    .drink_menu h2{
+        float:none;
+    }
+
+    .drink_menu ul li{
+        padding: 0.9em;
+    }
+
+    .navigation{
+        float:none;
+        width: 100%;
+        font-size: 90%;
+    }
+
+    footer img{
+        width: 8%;
+    }
+
+    .backtotop{
+        display:none;
+    }
+
+    .contact_item{
+        width: 100%;
+    }
+
+    .happyhours{
+        padding:10em 0;
+    }
+
+    .menu_roller{
+        height: 38em;
+    }
+}
+
+/*iPad*/
+@media screen and (max-width:770px){
+    body{
+        font-size: 120%;
+    }
+
+    .offer{
+        display:block;
+        width: 50%;
+        margin: 1em auto;
+    }
+
+    .navigation{
+        font-size:80%;
+    }
+
+    .event{
+        display:block;
+        width: 50%;
+        margin: 1em auto;
+    }
+
+    .gallery img{
+        width: 50%;
+    }
+
+    footer img{
+        width: 10%;
+    }
+}
+
+/*mobile*/
+@media screen and (min-width:401px){
+    body{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width:400px){
+    body{
+        font-size: 60%;
+    }
+
+    .offer{
+        width: 70%;
+        margin: 4em auto;
+    }
+
+    .event{
+        width: 70%;
+        font-size:140%;
+    }
+
+    .gallery img{
+        width: 100%;
+    }
+
+    .events h2,.drink_menu h2,.offers h2,.gallery-text h2{
+        text-align: center;
+        font-size: 180%;
+        padding-left: 0;
+    }
+
+    .contact{
+        font-size: 120%;
+        padding: 3em 0 0 0;
+    }
+
+    footer img{
+        width: 15%;
+    }
+
+    header{
+        font-size: 130%;
+    }
+}
+
+
